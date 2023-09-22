@@ -4,6 +4,7 @@ import './Components.css'
 
 
 const Logout = () => {
+    
     function goto() {
         navigate('/login')
     }
