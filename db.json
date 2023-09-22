@@ -1,0 +1,52 @@
+{
+  "login": [
+    {
+      "email": "Talha12@gmail.com",
+      "password": "Talha12"
+    }
+  ],
+  "restaurents": [
+    {
+      "name": "Monal Restaurent ",
+      "address": "Lahore (Liberty)",
+      "email": "Monalcafe67@gmail.com",
+      "id": "1"
+    },
+    {
+      "name": "PizzaOnline",
+      "address": "London",
+      "email": "PizzaOnline90@gmail.com",
+      "id": "2"
+    },
+    {
+      "name": "Bread And Beyond",
+      "address": "Miami",
+      "email": "Miami8765@gmail.com",
+      "id": "3"
+    },
+    {
+      "name": "Cheziuos (Johar Town Branch) ",
+      "address": "Italy",
+      "email": "Chezious4567@gmail.com",
+      "id": "4"
+    },
+    {
+      "name": "KFC",
+      "address": "London",
+      "email": "kfc9320@gmail.com",
+      "id": "5"
+    },
+    {
+      "name": "Ten Elevan Launch",
+      "address": "Multan",
+      "email": "ten320@gmail.com",
+      "id": "6"
+    },
+    {
+      "name": "",
+      "address": "",
+      "email": "",
+      "id": "GyZ5Vju"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+body ul{
+  margin: 0%;
+  padding: 0%;
+  
+}
+Table{
+  text-align: center;
+}
+.Ima-ges img{
+  width: 40px;
+  height: 40px;
+}
+.back-ground{
+  background-color: rgb(97, 162, 187);
+  
+}
+
+.anc-hor{
+  /* color: rgb(255 187 56); */
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-size: 800;
+  text-decoration: none;
+}
+.anc-hor .focus{
+  color: rgb(97, 162, 187);
+}
+.editt-ing{
+  margin-bottom: 3px;
+}
+
