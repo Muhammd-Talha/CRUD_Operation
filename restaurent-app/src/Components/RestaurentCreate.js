@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
-import { Form, InputGroup, Button, Navbar } from 'react-bootstrap';
+import { Form, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Components.css'
 import { GrRestaurant } from "react-icons/gr";
 import { IoIosPhotos, IoMdPaperPlane } from "react-icons/io";
-import { FaRegEdit } from "react-icons/fa";
-import { AiFillDelete } from "react-icons/ai";
 import Footer from './Footer';
-// import Navbarmenu from './Navbarmenu';
-
-
-
 
 const RestaurentCreate = () => {
     function create() {
-        console.log({ name, address, email });
         let data = { name, address, email }
         fetch('http://localhost:3000/restaurents', {
             method: 'POST',
@@ -33,10 +26,8 @@ const RestaurentCreate = () => {
     const [address, setaddress] = useState("");
     const [email, setemail] = useState("");
     const navigate = useNavigate();
-    console.log(name, address, email);
     return (
         <div>
-            {/* <Navbarmenu /> */}
             <h1 className='text-center mt-5 mb-5'>Create Restaurent's</h1>
             <div className='edit m-auto'>
                 <InputGroup className="mb-3  ">

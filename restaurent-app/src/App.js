@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/RestaurentUpdate/:id' element={< Protected Component={RestaurentUpdate} />} />
           <Route path='/RestaurentUpdate' element={< Protected Component={RestaurentUpdate} />} />
           <Route path='/Login' element={< Login />} />
-          <Route path='/Logout' element={< Protected Component={Logout} />} />
+          <Route path='/logout' element={< Protected Component={Logout} />} />
           <Route path='/*' element= {<PageNofound />} />
 
 

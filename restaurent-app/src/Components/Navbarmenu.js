@@ -1,12 +1,17 @@
 import React from 'react';
 import { AiFillHome, AiOutlineMenu, AiOutlinePlusCircle, AiOutlineFileSearch } from "react-icons/ai";
 import { FiEdit, FiLogIn } from "react-icons/fi";
-import { Container, Navbar, Nav, NavLink, } from 'react-bootstrap'
+import { Container, Navbar, Nav,  } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Logout from './Logout';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import Logout from './Logout';
+import { useNavigate } from 'react-router-dom';
 
 const Navbarmenu = () => {
+    const navigate = useNavigate();
+    function change(){
+
+    }
     return (
         <div>
             <Navbar expand="lg" className="back-ground ">
@@ -25,7 +30,7 @@ const Navbarmenu = () => {
                             <Nav.Link><Link className='pe-4 anc-hor' to='./RestaurentUpdate'>Update <FiEdit className='editt-ing' /></Link> </Nav.Link>
                             {
                                 localStorage.getItem('login') ?
-                                    <Nav.Link><Link className='pe-4 anc-hor' to='./Logout'>Logout <FiLogIn /> </Link> </Nav.Link>
+                                    <Nav.Link><Link className='pe-4 anc-hor' to='./Logout' onClick={()=>navigate('/login')}>Logout <FiLogIn /> </Link> </Nav.Link>
                                     // <Logout />
                         
                                     :

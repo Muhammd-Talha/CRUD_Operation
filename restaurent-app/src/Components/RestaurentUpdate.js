@@ -4,7 +4,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { GrRestaurant } from "react-icons/gr";
 import { IoIosPhotos, IoMdPaperPlane } from "react-icons/io";
 import Footer from './Footer';
-// import Navbarmenu from './Navbarmenu';
 
 const RestaurentUpdate = () => {
     const [name, setname] = useState("");
@@ -20,11 +19,11 @@ const RestaurentUpdate = () => {
                 setemail(result.email)
             })
         })
-    }, [])
+    },[params.id])
 
 
     const updateproduct = () => {
-        console.log({ name, address, email });
+        // console.log({ name, address, email });
         // let data = {name, address, email};
 
         fetch(`http://localhost:3000/restaurents/${params.id}`, {
@@ -36,7 +35,7 @@ const RestaurentUpdate = () => {
             body: JSON.stringify({ name, address, email })
         }).then((result) => {
             result.json().then((resp) => {
-                console.log("response", resp);
+                // console.log("response", resp);
                 navigate('/RestaurentList')
             })
         })
@@ -46,7 +45,6 @@ const RestaurentUpdate = () => {
     return (
 
         <div>
-            {/* <Navbarmenu /> */}
             <h1 className='text-center mt-5 mb-5'>Restaurent Update </h1>
             <div className='edit m-auto'>
             <InputGroup className="mb-3  ">
@@ -55,7 +53,7 @@ const RestaurentUpdate = () => {
                 <Form.Control className='edit'
                     value={name}
                     onChange={(e) => { setname(e.target.value) }}
-                    // placeholder="Restaurent Name"
+                    placeholder="Restaurent Name"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                 />
@@ -68,7 +66,7 @@ const RestaurentUpdate = () => {
                 <Form.Control className='edit'
                     value={address}
                     onChange={(e) => { setaddress(e.target.value) }}
-                    // placeholder="Restaurent Address"
+                    placeholder="Restaurent Address"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                 />
@@ -81,7 +79,7 @@ const RestaurentUpdate = () => {
                 <Form.Control className='edit'
                     value={email}
                     onChange={(e) => { setemail(e.target.value) }}
-                    // placeholder="Restaurent Email"
+                    placeholder="Restaurent Email"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                 />

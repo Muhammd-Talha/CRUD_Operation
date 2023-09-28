@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Container, Button } from 'react-bootstrap';
+import { Table, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaRegEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import './Components.css'
-// import Navbarmenu from './Navbarmenu';
 import Footer from './Footer';
 
 
@@ -13,11 +12,11 @@ const RestaurentList = () => {
     useEffect(() => {
         getdata();
     }, [])
-    function getdata(){
+    function getdata() {
         fetch('http://localhost:3000/restaurents').then((result) => {
             result.json().then((resp) => {
                 setdata(resp)
-                
+
             })
         })
     }
@@ -33,12 +32,11 @@ const RestaurentList = () => {
     }
     return (
         <div>
-            {/* <Navbarmenu /> */}
             <h1 className='text-center mt-3 mb-3'>Restaurent's List</h1>
             <Container className='table-responsive'>
                 <Table striped bordered hover variant="dark" >
                     <thead>
-                        <tr style={{height:"50px "}}>
+                        <tr style={{ height: "50px " }}>
                             <th>#</th>
                             <th>Restaurents Name</th>
                             <th>Location</th>
@@ -50,7 +48,7 @@ const RestaurentList = () => {
                     <tbody>
                         {
                             data.map((item, i) =>
-                                <tr key={i} style={{height:"50px"}}>
+                                <tr key={i} style={{ height: "50px" }}>
                                     <td>{i} </td>
                                     <td>{item.name}</td>
                                     <td>{item.address}</td>

@@ -11,7 +11,9 @@ Table{
   height: 40px;
 }
 .back-ground{
-  background-color: rgb(97, 162, 187);
+  /* background-color: rgb(97, 162, 187); */
+  /* background-color: transparent; */
+  background: rgba(255, 255, 255, .5);
   
 }
 

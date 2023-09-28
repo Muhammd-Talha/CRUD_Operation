@@ -1,11 +1,12 @@
 import React from 'react';
 import './Components.css'
 import { Container } from 'react-bootstrap';
-import { FaRegEdit } from "react-icons/fa";
-import { AiFillDelete } from "react-icons/ai";
-import { BsFacebook, BsTwitter, BsGoogle, BsInstagram } from "react-icons/bs";
+// import { FaRegEdit } from "react-icons/fa";
+// import { AiFillDelete } from "react-icons/ai";
+import { BsFacebook, BsTwitter,  BsInstagram } from "react-icons/bs";
 const Footer = () => {
     return (
+        
         <div>
             <footer>
                 <Container>
