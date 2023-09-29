@@ -9,9 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbarmenu = () => {
     const navigate = useNavigate();
-    function change(){
-
-    }
     return (
         <div>
             <Navbar expand="lg" className="back-ground ">
